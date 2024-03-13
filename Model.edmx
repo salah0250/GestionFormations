@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="FormationModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Erreurs détectées durant la génération :
+avertissement 6013: Aucune clé primaire n'est définie pour la table/vue 'C:\USERS\ABOUL\DOCUMENTS\TEST\FORMATION.MDF.dbo.Beneficiaire' ; en outre, aucune clé primaire valide n'a pu être déduite. Cette table/vue a été exclue. Pour utiliser l'entité, vous devez passer en revue votre schéma, ajouter les clés appropriées et supprimer le commentaire associé.
+        <EntityType Name="Beneficiaire">
+          <Property Name="PPR" Type="int" />
+          <Property Name="NomEtPrenom" Type="nchar" MaxLength="10" />
+          <Property Name="NOM_ETABA" Type="nvarchar" MaxLength="255" />
+          <Property Name="LA_Fonc" Type="nvarchar" MaxLength="255" />
+          <Property Name="DateNaissance" Type="varchar" MaxLength="50" />
+          <Property Name="GENRE" Type="nvarchar" MaxLength="50" />
+          <Property Name="Milieu" Type="nvarchar" MaxLength="50" />
+          <Property Name="Commun" Type="nvarchar" MaxLength="50" />
+          <Property Name="CodeFor" Type="int" />
+          <Property Name="NumProjet" Type="int" />
+          <Property Name="Sujet" Type="varchar" MaxLength="50" />
+          <Property Name="Lieu" Type="varchar" MaxLength="50" />
+          <Property Name="Dommaine" Type="varchar" MaxLength="50" />
+          <Property Name="CategorieBeneficiaire" Type="varchar" MaxLength="50" />
+          <Property Name="ForConfi" Type="varchar" MaxLength="50" />
+          <Property Name="NembreBeneficiaire" Type="int" />
+          <Property Name="Date" Type="date" />
+          <Property Name="Heure" Type="varchar" MaxLength="50" />
+        </EntityType>-->
+        <EntityContainer Name="FormationModelStoreContainer" />
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="FormationModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="FormationEntities" annotation:LazyLoadingEnabled="true" />
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="FormationModelStoreContainer" CdmEntityContainer="FormationEntities" />
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Aucun" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
